@@ -1,23 +1,4 @@
 <h1 align="left">Nutriciencia 🥗</h1>
-
-###
-
-<p align="left">Proyecto personal</p>
-
-###
-
-<h2 align="left">Sobre el proyecto:</h2>
-
-###
-
-<p align="center">🍗 Se diseñó con el objetivo de compartir contenido de un equipo de nutricionistas y de esta manera darles la oportunidad de ser parte de la web.<br><br>🥪 It was designed with the aim of sharing content from a team of nutritionists and thus giving them the opportunity to be part of the web.</p>
-
-###
-
-<h2 align="left">Tecnologias</h2>
-
-###
-
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
   <img width="12" />
@@ -25,20 +6,37 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
 </div>
+<h5>Proyecto en equipo</h5>
 
-###
+----
 
-<p align="left">Equipo : EMDevelopers 2023</p>
+## Sobre el proyecto:
 
-###
+- Diseñamos esta página web con el objetivo de compartir el contenido de nuestro cliente sobre nutrición y buenos hábitos de forma personalizada y atractiva para que sus clientes tengan una experiencia agradable al introducirse y navegar en ella .
 
-<div align="left">
-  <a href="https://www.linkedin.com/in/matias-mendoza-955170240/" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
-  </a>
-  <a href="mendoza.matias.ezequiel.01@gmail.com" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg" width="52" height="40" alt="gmail logo"  />
-  </a>
-</div>
+## Metodología de trabajo:
 
-###
+- Se llevaron a cabo una serie de reuniones para la planificación y desarrollo de dicho proyecto. En cada una ellas se planteaba las partes que se iban a llevar a cabo durante las posteriores semanas y las entregas que se debían hacer en cierto tiempo.
+
+### Tecnologías:
+
++ HTML
++ CSS
++ JS
+
+----
+## About the project:
+
+- We designed this website with the aim of sharing our client's content about nutrition and good habits in a personalized and attractive way so that your client have a pleasant experience when entering and browsing it.
+
+## Methodology of work:
+
+- A number of meetings were held for the planning and development of this project. Each set out the parts to be carried out during the following weeks and the deliveries to be made over a certain period of time.
+
+### Technologies:
+
++ HTML
++ CSS
++ JS
+
+
