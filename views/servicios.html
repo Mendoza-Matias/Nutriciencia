@@ -1,101 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/serv_calculator.css">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="icon" href="../assets/Logo.jpeg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Nutriciencia</title>
 </head>
+
 <body>
+    <!--NAVEGACIÓN-->
     <header class="header">
-        <h1 class="logo">
-            <a href="../index.html">
-                <img class="img" src="../assets/Logo2.png" alt="Logo">
-            </a>
-        </h1>
-        <button class="button">
-            <svg class='svg' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg>
-        </button>
-        <nav class="nav activo" >
-            <ul class="ul">
-                <li class="li"><a href="../index.html" class="a">Sobre nosotros</a></li>
-                <li class="li"><a href="turnos.html" class="a">Pedí un turno</a></li>
-                <li class="li"><a href="servicios.html" class="a">Servicios</a></li>
-                <li class="li"><a href="objetivos.html" class="a">Objetivos</a></li>
-                <li class="li"><a href="contacto.html" class="a">Contacto</a></li>
-                <li class="li button_dark button_white" id="button_dark"><button class="button_darkMode" id="btn_dark">Modo oscuro</button></li>
+        <nav class="navbar">
+            <div class="logo">
+                <a class="link" href="#"><img class="logo" src="../assets/Logo.jpeg" alt="Logo nutriciencia"></a>
+            </div>
+            <ul class="links">
+                <li><a class="link" href="../index.html">Nosotros</a></li>
+                    <li><a class="link" href="./turnos.html">Turnos</a></li>
+                    <li><a class="link" href="./servicios.html">Servicios</a></li>
+                    <li><a class="link" href="./objetivos.html">Objetivos</a></li>
+                    <li><a class="link" href="./contacto.html">Contacto</a></li>
             </ul>
+            <div class="toggle_btn">
+                <i class='bx bx-list-ul'></i>
+            </div>
+            <div class="dropdown_menu">
+                <li><a class="link" href="../index.html">Nosotros</a></li>
+                <li><a class="link" href="./turnos.html">Turnos</a></li>
+                <li><a class="link" href="./servicios.html">Servicios</a></li>
+                <li><a class="link" href="./objetivos.html">Objetivos</a></li>
+                <li><a class="link" href="./contacto.html">Contacto</a></li>
+            </div>
         </nav>
     </header>
     <main>
-      <div class="title-servicios">
-        <h2>Nuestros<br>Servicios.</h2>
-        <p>Eligí el mas acorde<br>a tu perfil.</p>
-      </div>
-        <section id="servicios" class="services">
-            <div class="aling">
-                <div class="art-content">
-                <img class="img-content" src="../assets/primer-combo.png" alt="${service.img}"> 
-                <h3><strong class="precio color-servicio">Entrevista nutricional ,<br>antropometria y plan personalizado.</strong></h3>
-                <p class="servicios_parrafo">Incluye antropometría para conocer el estado de grasa y músculo, una entrevista nutricional y la confección del plan alimentario según objetivos.<br><strong class="precio ">Presencial</strong></p>
-                <p class="precio_parrafo"><strong class="precio">$7.000</strong></p>
-                <a href="turnos.html"><button class="btn-content btn_entrevitas">Pedi un turno</button></a>
-                </div>
-            </div>
-            
-            <div class="aling">
-                <div class="art-content">
-                <img class="img-content" src="../assets/segundo-combo.png" alt="${service.img}"> 
-                <h3><strong class="precio color-servicio">Entrevista nutricional <br> y plan personalizado.</strong></h3>
-                <p class="servicios_parrafo">Incluye entrevista nutricional y confección del plan alimentario según objetivos.<br><strong class="precio">Presencial u online</strong></p>
-                <p class="precio_parrafo precio_dos"><strong class="precio">$5.000</strong></p>
-                <a href="turnos.html"><button class="btn-content btn_entrevitas">Pedi un turno</button></a>
-                </div>
+        <!--SECCION SERVICIOS-->
+        <div>
+            <h2 class="text-center separacion">Nuestros<br>Servicios.</h2>
+            <p  class="text-center">Eligí el mas acorde<br>a tu perfil.</p>
+        </div>
+        <section id="servicios" class="servicios">
+            <div class="tarjeta-servicio">
+                <img class="servicio_img" src="../assets/primer-combo.png" alt="${service.img}">
+                <h3><strong class="color-servicio">Antropometria, Entrevista nutricional y Plan personalizado.</strong>
+                </h3>
+                <p class="servicios_parrafo">
+                    Incluye antropometria , entrevista nutricional y confección del plan alimentario segun objetivos.
+                    <br><strong>Presencial</strong></p>
+                <p class="precio_parrafo precio_dos"><strong class="precio">$12.000</strong></p>
+                <a href="turnos.html"><button class="button-blue">Pedi un turno</button></a>
             </div>
 
-            <div class="aling control">
-                <div class="art-content">
-                <img class="img-content" src="../assets/tercer-combo.png" alt="${service.img}"> 
-                <h3><strong class="precio color-servicio">Control Nutricional.</strong></h3>
-                <p class="servicios_parrafo">Incluye control de seguimiento para abordaje y ajustes del plan inicial. <br><strong class="precio">Presencial y online</strong></p>
-                <p class="precio_parrafo parrafo_tres"><strong class="precio">$3.500</strong></p>
-                <a href="turnos.html"><button class="btn-content btn_control">Pedi un turno</button></a>
+                <div class="tarjeta-servicio">
+                    <img class="servicio_img" src="../assets/segundo-combo.png" alt="${service.img}">
+                    <h3><strong class="precio color-servicio">Entrevista nutricional y plan personalizado.</strong>
+                    </h3>
+                    <p class="servicios_parrafo">Incluye entrevista nutricional y confección del plan alimentario según
+                        objetivos.<br><strong class="precio">Presencial u online</strong></p>
+                    <p class="precio_parrafo precio_dos"><strong class="precio">$10.000</strong></p>
+                    <a href="turnos.html"><button class="button-blue">Pedi un turno</button></a>
                 </div>
-            </div>
 
-            <div class="aling">
-                <div class="art-content">
-                <img class="img-content" src="../assets/cuarto-combo.png" alt="${service.img}"> 
-                <h3><strong class="precio color-servicio">Antropometria.</strong></h3>
-                <p class="servicios_parrafo">Incluye antropometría completa (perfiles ISAK 1 o 2) con entrega y explicación de informe.<br><strong class="precio">Presencial</strong></p>
-                <p class="precio_parrafo parrafo_cuatro"><strong class="precio">$3.000</strong></p>
-                <a href="turnos.html"><button class="btn-content btn_antro">Pedi un turno</button></a>
+                <div class="tarjeta-servicio">
+                    <img class="servicio_img" src="../assets/segundo-combo.png" alt="${service.img}">
+                    <h3><strong class="precio color-servicio">Control nutricional y antropometria.</strong>
+                    </h3>
+                    <p class="servicios_parrafo">Incluye entrevista nutricional y confección del plan alimentario según
+                        objetivos.<br><strong class="precio">Presencial u online</strong></p>
+                    <p class="precio_parrafo precio_dos"><strong class="precio">$6.000</strong></p>
+                    <a href="turnos.html"><button class="button-blue">Pedi un turno</button></a>
                 </div>
-            </div> 
+        
+                <div class="tarjeta-servicio">
+                    <img class="servicio_img" src="../assets/cuarto-combo.png" alt="${service.img}">
+                    <h3><strong class="precio color-servicio">Antropometria.</strong></h3>
+                    <p class="servicios_parrafo">Incluye antropometría completa (perfiles ISAK 1 o 2) con entrega y
+                        explicación de informe.<br><strong class="precio">Presencial</strong></p>
+                    <p class="precio_parrafo parrafo_cuatro"><strong class="precio">$3.000</strong></p>
+                    <a href="turnos.html"><button class="button-blue">Pedi un turno</button></a>
+                </div>
+        
         </section>
-</div>
-</main>  
+    </main>
     <script src="../js/index.js"></script>
     <!-- <script src="../js/servicios.js"></script> -->
     <!--Pie de pagina-->
     <footer class="container_footer">
-      <div class="footer_logo">
-          <img src="../assets/Logo2.png" alt="logo"/>
-      </div>
-      <div class="footer_contact">
-          <h6>Estamos en </h6>
-          <p>- San Martín 2281 Puntomed - Piso 6 - Consultorio 9 </p>
-          <h6>Escribirnos al</h6>
-          <p class="num-footer">-3765113766</p>
-          <h6>Nuestro correo</h6>
-          <p>- nutri.ciencia@hotmail.com</p>
-          
-      </div>
-  </footer>
+        <div class="footer_logo">
+            <img src="../assets/Logo2.png" alt="logo" />
+        </div>
+        <div class="footer_contact">
+            <h6>Estamos en </h6>
+            <p>- San Martín 2281 Puntomed - Piso 6 - Consultorio 9 </p>
+            <h6>Escribirnos al</h6>
+            <p class="num-footer">-3765113766</p>
+            <h6>Nuestro correo</h6>
+            <p>- nutri.ciencia@hotmail.com</p>
+
+        </div>
+    </footer>
 </body>
+
 </html>

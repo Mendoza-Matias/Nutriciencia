@@ -1,31 +1,10 @@
-//Funcionalidad del Navbar
+const toggle = document.querySelector(".toggle_btn");
+const toggleBtnIcon = document.querySelector(".toggle_btn i");
+const dropDownMenu = document.querySelector(".dropdown_menu");
 
-/**Cuando hago click en la clase button le añado y le quito la clase active (toogle)
- * toogle de la clase active
-*/
-
-const button = document.querySelector('.button');
-
-const nav = document.querySelector('.nav');
-
-button.addEventListener('click',()=>{
-    nav.classList.toggle('activo')
-});
-
-if(window.innerWidth < 480  ){
-    nav.classList.remove("activo") 
-}
-if(window.innerWidth < 400  ){
-    nav.classList.remove("activo") 
-}
-
-const btn_dark = document.getElementById('btn_dark');
-const main_all = document.querySelector('white_mode_all');
-
-
-btn_dark.addEventListener('click', (e)=>{
-        document.body.classList.toggle('dark_mode')
-});
+toggle.addEventListener("click",()=>{
+    dropDownMenu.classList.toggle("open");
+})
 
 
 

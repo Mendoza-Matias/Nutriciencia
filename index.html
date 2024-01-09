@@ -5,85 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="icon" href="../assets/Logo.jpeg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Nutriciencia</title>
 </head>
 <body>
-    <header class="header " >
-        <h1 class="logo">
-            <a href="#">
-                <img class="img" src="assets/Logo2.png" alt="Logo">
-            </a>
-        </h1>
-        <button class="button">
-            <svg class='svg' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg>
-        </button>
-        <nav class="nav activo" >
-            <ul class="ul">
-                <li class="li"><a href="#nosotros" class="a">Sobre nosotros</a></li>
-                <li class="li"><a href="./views/turnos.html" class="a">Pedí un turno</a></li>
-                <li class="li"><a href="./views/servicios.html" class="a">Servicios</a></li>
-                <li class="li"><a href="./views/objetivos.html" class="a">Objetivos</a></li>
-                <li class="li"><a href="./views/contacto.html" class="a">Contacto</a></li>
-                <li class="li button_dark button_white" id="button_dark"><button class="button_darkMode" id="btn_dark">Modo oscuro</button></li>
-            </ul>
+    <!--NAVEGACIÓN-->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a class="link" href="#"><img class="logo" src="./assets/Logo.jpeg" alt="Logo nutriciencia"></a>
+            </div>
+                <ul class="links">
+                    <li><a class="link" href="#nosotros">Nosotros</a></li>
+                    <li><a class="link" href="../Nutriciencia/views/turnos.html">Turnos</a></li>
+                    <li><a class="link" href="./views/servicios.html">Servicios</a></li>
+                    <li><a class="link" href="./views/objetivos.html">Objetivos</a></li>
+                    <li><a class="link" href="./views/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class='bx bx-list-ul'></i>
+                </div>
+                    <div class="dropdown_menu">
+                        <li><a class="link" href="#nosotros">Nosotros</a></li>
+                        <li><a class="link" href="../Nutriciencia/views/turnos.html">Turnos</a></li>
+                        <li><a class="link" href="./views/servicios.html">Servicios</a></li>
+                        <li><a class="link" href="./views/objetivos.html">Objetivos</a></li>
+                        <li><a class="link" href="./views/contacto.html">Contacto</a></li>
+                    </div>
         </nav>
     </header>
+    <!--FIN DE LA NAVEGACION-->
     <main class="white_mode_all">
         <div class="container-hero">
-            <div class="hero_title">
-                <h1>Nutriciencia</h1>
-                <p>Nutrición para mejorar tu salud, rendimiento o composición corporal  </p>
+            <div class="hero-title">
+                <h1 class="titulo-header text-center">Nutriciencia</h1>
+                <p class="parrafo-header text-center">Nutrición personalizado , adaptada a vos y tu objetivo.</p>
             </div>
         </div>
-        <div class="container_nosotros" id="nosotros">
+        <!--NOSOTROS-->
+        <section class="container_nosotros separacion" id="nosotros">
             <div class="container">
                 <div class="nosotros_imagenprimera"></div>
-                <div class="nosotros_imagensegunda"></div>
-                <div class="nosotros_parrafo_segunda">
-                    <div class="nosotros_title">
-                        <h2>Te ayudamos a:</h2>
+                    <div class="nosotros_parrafo_primera">
+                        <div class="nosotros_parrafo">
+                            <h2 class="nosotros_title">Capacitados en:</h2>
+                            <p>-Nutrición Clínica  </p>
+                            <p>-Nutrición Deportiva  </p>
+                            <p>-Antropometría protocolos ISAK I y II</p>
+                            <p>-Soporte nutricional enteral </p>
+                            <p>-Coaching nutricional</p>
+                            <p>-Alimentación basada en plantas</p>
+                            <p>-Trastornos de la conducta alimentaria</p>
+                            <p>-Nutrición en embarazo y lactancia</p>
+                            <p>-Nutrición infantil</p>
+                        </div>
                     </div>
+                    <!--Fin-->
+                    <div class="nosotros_imagensegunda"></div>
                     <div class="nosotros_parrafo">
-                        <p>-Conocer tu composición corporal mediante un informe</p>
-                        <p>-Mejorar tu salud o prevenir enfermedades</p>
-                        <p>-Perder grasa corporal</p>
-                        <p>-Ganar masa muscular</p>
-                        <p>-Mejorar tu rendimiento deportivo</p>
-                        <p>-Mejorar tu relación con la comida</p>
-                        <p>-Optimizar tus nutrientes y energía diaria </p>
-                        <p>-Asesoramiento en suplementos nutricionales</p>
+                        <div class="nosotros_parrafo">
+                            <h2 class="nosotros_title">Capacitados en:</h2>
+                            <p>-Nutrición Clínica  </p>
+                            <p>-Nutrición Deportiva  </p>
+                            <p>-Antropometría protocolos ISAK I y II</p>
+                            <p>-Soporte nutricional enteral </p>
+                            <p>-Coaching nutricional</p>
+                            <p>-Alimentación basada en plantas</p>
+                            <p>-Trastornos de la conducta alimentaria</p>
+                            <p>-Nutrición en embarazo y lactancia</p>
+                            <p>-Nutrición infantil</p>
+                        </div>
                     </div>
+                    <!--Fin-->
                 </div>
-                <div class="nosotros_imagen_primera"> </div>
-                <div class="nosotros_imagen_segunda"></div>
-                <div class="nosotros_parrafo_primera">
-                    <div class="nosotros_title">
-                        <h2>Capacitados en:</h2>
-                    </div>
-                    <div class="nosotros_parrafo">
-                        <p>-Nutrición Clínica  </p>
-                        <p>-Nutrición Deportiva  </p>
-                        <p>-Antropometría protocolos ISAK I y II</p>
-                        <p>-Soporte nutricional enteral </p>
-                        <p>-Coaching nutricional</p>
-                        <p>-Alimentación basada en plantas</p>
-                        <p>-Trastornos de la conducta alimentaria</p>
-                        <p>-Nutrición en embarazo y lactancia</p>
-                        <p>-Nutrición infantil</p>
-                    </div>
+            </section>
+
+            <!--Contancto-->
+            <section class="contacto separacion">
+                <div class="text-center titulo-contacto">
+                    <h3>Contacta con nosotros y agenda una cita</h3>
                 </div>
-              
-              </div>
-        </div>
-        <div class="container_contact">
-            <div class="contact_title">
-                <h3>Te invitamos a contactar con nosotros y agendar tu cita</h3>
-                <a href="./views/turnos.html" class="btn_contact">Contactar</a>
-            </div>
-        </div>
+                <div>
+                    <a href="./views/contacto.html" class="button">Contacto</a>
+                </div>
+            </section>
+    
+
         <footer class="container_footer">
             <div class="footer_logo">
                 <img src="assets/Logo2.png" alt="logo"/>

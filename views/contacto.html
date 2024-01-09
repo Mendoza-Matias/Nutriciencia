@@ -1,75 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Estilos de la navegacion style.css-->
     <link rel="stylesheet" href="../css/style.css">
-    <!--Estilos propios de contacto-->
-    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="../assets/Logo.jpeg">
     <title>Nutriciencia</title>
 </head>
+
 <body>
+    <!--NAVEGACIÓN-->
     <header class="header">
-        <div class="logo">
-            <a href="../index.html" class="a">
-                <img class="img" src="../assets/Logo2.png" alt="Logo">
-            </a>
-        </div>
-        <button class="button">
-            <svg class='svg' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg>
-        </button>
-        <nav class="nav activo" >
-            <ul class="ul">
-                <li class="li"><a href="../index.html" class="a">Sobre nosotros</a></li>
-                <li class="li"><a href="turnos.html" class="a">Pedí un turno</a></li>
-                <li class="li"><a href="servicios.html" class="a">Servicios</a></li>
-                <li class="li"><a href="objetivos.html" class="a">Objetivos</a></li>
-                <li class="li"><a href="contacto.html" class="a">Contacto</a></li>
-                <li class="li button_dark button_white" id="button_dark"><button class="button_darkMode" id="btn_dark">Modo oscuro</button></li>
+        <nav class="navbar">
+            <div class="logo">
+                <a class="link" href="#"><img class="logo" src="../assets/Logo.jpeg" alt="Logo nutriciencia"></a>
+            </div>
+            <ul class="links">
+                <li><a class="link" href="../index.html">Nosotros</a></li>
+                <li><a class="link" href="./turnos.html">Turnos</a></li>
+                <li><a class="link" href="./servicios.html">Servicios</a></li>
+                <li><a class="link" href="./objetivos.html">Objetivos</a></li>
+                <li><a class="link" href="./contacto.html">Contacto</a></li>
             </ul>
+            <div class="toggle_btn">
+                <i class='bx bx-list-ul'></i>
+            </div>
+            <div class="dropdown_menu">
+                <li><a class="link" href="../index.html">Nosotros</a></li>
+                <li><a class="link" href="./turnos.html">Turnos</a></li>
+                <li><a class="link" href="./servicios.html">Servicios</a></li>
+                <li><a class="link" href="./objetivos.html">Objetivos</a></li>
+                <li><a class="link" href="./contacto.html">Contacto</a></li>
+            </div>
         </nav>
     </header>
     <!--Datos de contacto-->
     <main class="white_mode_all">
         <div>
-            <section class="sect-contact">
-                <article class="contact_imgArt">
-                    <h2>Contactá con nosotros</h2>
-                    <!-- <p class="p-contact">Escribinos al <strong class="numero">3785113766</strong></p> -->
-                    <div class="contact_img">
-                        <a href="https://wa.me/message/EU5PVAFYPH3XP1" target="_blank"><img class="img-contact"src="../public/icons/whathsapp.png" alt="Logo whathsapp"></a>
-                        <a href="https://www.instagram.com/nutriciencia_/" target="_blank"><img class="img-contact"src="../public/icons/instagram.png" alt="Logo instagram"></a>
-                        <a href="https://www.facebook.com/nutriciencia?mibextid=LQQJ4d" target="_blank"><img class="img-contact"src="../public/icons/facebook.png" alt="Logo facebook"></a>
-                    </div>
-                </article>
-                <article>
-           
-                </article>
+            <section class="contacto">
+                <h2 class="text-center separacion">Contactá con nosotros</h2>
+                <!-- <p class="p-contact">Escribinos al <strong class="numero">3785113766</strong></p> -->
+                <div class="contacto-logos">
+                    
+                            <a href="https://wa.me/message/EU5PVAFYPH3XP1" target="_blank"><img class="img-contact"
+                            src="../public/icons/whathsapp.png" alt="Logo whathsapp"></a>
+                    
+                            <a href="https://www.instagram.com/nutriciencia_/" target="_blank"><img class="img-contact"
+                            src="../public/icons/instagram.png" alt="Logo instagram"></a>
+                    
+                            <a href="https://www.facebook.com/nutriciencia?mibextid=LQQJ4d" target="_blank"><img
+                            class="img-contact" src="../public/icons/facebook.png" alt="Logo facebook"></a>
+                    
+                            <a href="https://www.tiktok.com/nutriciencia" target="_blank"><img
+                            class="img-contact" src="../public/icons/tiktok.png" alt="Logo tiktok"></a>
+                   
+                            <a href="https://www.twitter.com/nutricienciaok" target="_blank"><img
+                            class="img-contact" src="../public/icons/x.png" alt="Logo x"></a>
+                </div>
             </section>
         </div>
-        <iframe class="map_contacto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4077.91076663607!2d-55.90091801883746!3d-27.36736458117315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457bfbdfbda5631%3A0xc2cd75ba84dd11b2!2sPUNTO%20MED%20Consultorios%20M%C3%A9dicos%20en%20Posadas!5e1!3m2!1ses-419!2sar!4v1677430871276!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map_contacto"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4077.91076663607!2d-55.90091801883746!3d-27.36736458117315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457bfbdfbda5631%3A0xc2cd75ba84dd11b2!2sPUNTO%20MED%20Consultorios%20M%C3%A9dicos%20en%20Posadas!5e1!3m2!1ses-419!2sar!4v1677430871276!5m2!1ses-419!2sar"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         <p class="p-contact">Nuestra ubicacion es San Martin 2281<br>Puntomed-Piso 6-Consultorio 9</p>
     </main>
-        <footer class="container_footer">
-            <div class="footer_logo">
-                <img src="../assets/Logo2.png" alt="logo"/>
-            </div>
-            <div class="footer_contact">
-                <h6>Estamos en </h6>
-                <p>- San Martín 2281 Puntomed - Piso 6 - Consultorio 9 </p>
-                <h6>Escribirnos al</h6>
-                <p class="num-footer">-3765113766</p>
-                <h6>Nuestro correo</h6>
-                <p>- nutri.ciencia@hotmail.com</p>
-              
-            </div>
-        </footer>
+    <footer class="container_footer">
+        <div class="footer_logo">
+            <img src="../assets/Logo2.png" alt="logo" />
+        </div>
+        <div class="footer_contact">
+            <h6>Estamos en </h6>
+            <p>- San Martín 2281 Puntomed - Piso 6 - Consultorio 9 </p>
+            <h6>Escribirnos al</h6>
+            <p class="num-footer">-3765113766</p>
+            <h6>Nuestro correo</h6>
+            <p>- nutri.ciencia@hotmail.com</p>
+
+        </div>
+    </footer>
 
     <script src="../js/index.js"></script>
 </body>
+
 </html>

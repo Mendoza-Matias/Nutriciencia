@@ -1,138 +1,216 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/serv_calculator.css">
-    <link rel="icon" href="../assets/Logo.jpeg">
-    <title>Nutriciencia</title>
-</head>
-<body>
-    <header class="header">
-        <h1 class="logo">
-          <a href="../index.html">
-            <img class="img" src="../assets/Logo2.png" alt="Logo">
-          </a>
-        </h1>
-        <button class="button">
-            <svg class='svg' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg>
-        </button>
-        <nav class="nav activo" >
-            <ul class="ul">
-                <li class="li"><a href="../index.html" class="a">Sobre nosotros</a></li>
-                <li class="li"><a href="turnos.html" class="a">Pedí un turno</a></li>
-                <li class="li"><a href="servicios.html" class="a">Servicios</a></li>
-                <li class="li"><a href="#" class="a">Objetivos</a></li>
-                <li class="li"><a href="contacto.html" class="a">Contacto</a></li>
-                <li class="li button_dark button_white" id="button_dark"><button class="button_darkMode" id="btn_dark">Modo oscuro</button></li>
-            </ul>
-        </nav>
-    </header>
-    <main> 
-        <div class="title-servicios">
-          <h2>Calculadoras</h2>
-          <p>Los valores de % graso son referencias.<br>Para mayor precisión recomendamos una antropometría hecha por un profesional.</p>
-        </div>
-        <section class="seccion">
-            <!--Seccion de servicios desde javascript-->
-        <div class="alingNew">
-        <section class="calculator">
-            <h2><strong class="precio">Calculadora de IMC.</strong></h2>
-            <div>
-              <label>Peso (kg):</label>
-              <input class="input" type="number" id="weight" min="1" max="300" step="0.1" placeholder="Ejemplo 66">
-            </div>
-            <div>
-              <label>Altura (cm):</label>
-              <input  class="input"type="number" id="height" min="50" max="300" step="0.1" placeholder="Ejemplo 169 sin .">
-            </div>
-            <div>
-              <label>Edad:</label>
-              <input class="input"type="number" id="age" min="1" max="120" placeholder="Ejemplo 20">
-            </div>
-              <label>Sexo:</label>
-              <select id='sex' class="input">
-                <option value="hombre">Hombre</option>
-                <option value="mujer">Mujer</option>
-            </select>
-            <button class="btn-content " onclick="calcularIMC()">Calcular IMC</button>
-            <div class="precio" id="resultado" >Tu IMC es:</div>
-            
-    </section>
-</div>
-<div class="alingNew">
-  <section class="calculator">
-    <h2><strong class="precio">Calculadora de calorias.</strong></h2>
-    <label for="weight">Peso (kg):</label>
-    <input  class="input" type="number" id="peso"  placeholder="Ejemplo 66">
-    <label for="height">Altura (cm):</label>
-    <input  class="input"type="number" id="altura"  placeholder="Ejemplo 169 sin .">
-    <label for="age">Edad:</label>
-    <input  class="input"type="number" id="edad"  placeholder="Ejemplo 20">
-    <label for="gender">Sexo:</label>
-    <select class="input" id="genero" >
-      <option value="hombre">Hombre</option>
-      <option value="mujer">Mujer</option>
-    </select>
-    <label for="activity">Nivel de Actividad:</label>
-    <select class="input" id="activity" >
-      <option value="1.2">Sedentario</option>
-      <option value="1.375">Ligeramente Activo</option>
-      <option value="1.55">Moderadamente Activo</option>
-      <option value="1.725">Muy Activo</option>
-      <option value="1.9">Extremadamente Activo</option>
-    </select>
-    <button class="btn-content" onclick="calcular()">Calcular Calorías</button>
-    <div class="resultado">
-      <p class="precio">Tu requerimiento diario de calorías es: <span id="calorias">0</span> kcal.</p>
-    </div>
-  </section>
-</div>
-</section>
-<div class="alingNew">
-  <section class="calculator" >
-    <h2><strong.precio>Calculadora de porcentaje de grasa corporal.</strong></h2>
-      <label for="gender">Sexo:</label>
-      <select class="input" id="generos" name="gender">
-        <option value="femenino">Mujer</option>
-        <option value="masculino">Hombre</option>
-      </select><br><br>
-      <label for="peso">Peso (kg):</label>
-      <input  class="input" type="number" id="pesos" name="peso" step="0.1" placeholder="Ejemplo  61.1"><br><br>
-      <label for="altura">Altura (m):</label>
-      <input  class="input"type="number" id="alturas" name="altura" step="0.1" placeholder="Ejemplo  1.63 con ."><br><br>
-      <label for="edad">Edad:</label>
-      <input  class="input"type="number" id="edades" name="edad"  placeholder="Ejemplo 47 "><br><br>
-      <button class="btn-content" onclick="calcularGrasa()">Calcular % graso</button>
-    <p id="resultados">Tu porcentaje de grasa corporal es:</p>
-  </section>
-  </div>
-  <div class="title-servicios">
-    <h2>Calculadoras</h2>
-    <p>Los valores de % graso son referencias.<br>Para mayor precisión recomendamos una antropometría hecha por un profesional.</p>
-  </div>
-</main>  
 
-    <script src="../js/index.js"></script>
-    <script src="../js/calculator.js"></script>
-    <!--Pie de pagina-->
-    <footer class="container_footer">
-      <div class="footer_logo">
-          <img src="../assets/Logo2.png" alt="logo"/>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="icon" href="../assets/Logo.jpeg">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Nutriciencia</title>
+</head>
+
+<body>
+  <!--NAVEGACIÓN-->
+  <header class="header">
+    <nav class="navbar">
+        <div class="logo">
+            <a class="link" href="#"><img class="logo" src="../assets/Logo.jpeg" alt="Logo nutriciencia"></a>
+        </div>
+            <ul class="links">
+              <li><a class="link" href="../index.html">Nosotros</a></li>
+                    <li><a class="link" href="./turnos.html">Turnos</a></li>
+                    <li><a class="link" href="./servicios.html">Servicios</a></li>
+                    <li><a class="link" href="./objetivos.html">Objetivos</a></li>
+                    <li><a class="link" href="./contacto.html">Contacto</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class='bx bx-list-ul'></i>
+            </div>
+                <div class="dropdown_menu">
+                  <li><a class="link" href="../index.html">Nosotros</a></li>
+                  <li><a class="link" href="./turnos.html">Turnos</a></li>
+                  <li><a class="link" href="./servicios.html">Servicios</a></li>
+                  <li><a class="link" href="./objetivos.html">Objetivos</a></li>
+                  <li><a class="link" href="./contacto.html">Contacto</a></li>
+                </div>
+    </nav>
+</header>
+  <main>
+    <div>
+      <h2 class="text-center separacion">Calculadoras</h2>
+      <p class="text-center">Los valores de % graso son referencias.<br>Para mayor precisión recomendamos una antropometría hecha por un
+        profesional.</p>
+    </div>
+    <section class="seccion">
+      <!--Seccion de servicios desde javascript-->
+      <div>
+        <form class="formulario">
+          <fieldset>
+            <legend>Calcular Imc</legend>
+          </fieldset>
+
+          <div class="campo">
+            <label>Peso (kg):</label>
+            <input class="input" type="number" id="weight" min="1" max="300" step="0.1" placeholder="Ejemplo 66">
+          </div>
+          <!--Fin de campo-->
+          <div class="campo">
+            <label>Altura (cm):</label>
+            <input class="input" type="number" id="height" min="50" max="300" step="0.1"
+              placeholder="Ejemplo 169 sin .">
+          </div>
+          <!--Fin de campo-->
+          <div class="campo">
+            <label>Edad:</label>
+            <input class="input" type="number" id="age" min="1" max="120" placeholder="Ejemplo 20">
+          </div>
+          <!--Fin de campo-->
+          <div class="campo">
+            <label>Sexo:</label>
+            <select id='sex' class="input">
+              <option value="hombre">Hombre</option>
+              <option value="mujer">Mujer</option>
+            </select>
+          </div>
+          <!--Fin de campo-->
+          <div class="text-center">
+            <button class="button-blue" id="btn-masa">Calcular IMC</button>
+          </div>
+          <!--Fin de campo-->
+          <div class="text-center">
+            <p class="resultado" id="resultado">Tu IMC es:</p>
+          </div>
+          <!--Fin de campo-->
+        </form>
       </div>
-      <div class="footer_contact">
-          <h6>Estamos en </h6>
-          <p>- San Martín 2281 Puntomed - Piso 6 - Consultorio 9 </p>
-          <h6>Escribirnos al</h6>
-          <p class="num-footer">-3765113766</p>
-          <h6>Nuestro correo</h6>
-          <p>- nutri.ciencia@hotmail.com</p>
-          
+      
+    </div>
+      <!--Fin de calculadora-->
+      <!--Calculadora-->
+      <div>
+        <form class="formulario">
+          <fieldset>
+            <legend>Calcular calorias.</legend>
+          </fieldset>
+
+          <div class="campo">
+            <label for="weight">Peso (kg):</label>
+            <input class="input" type="number" id="peso" placeholder="Ejemplo 66">
+          </div>
+
+          <div class="campo">
+            <label for="height">Altura (cm):</label>
+            <input class="input" type="number" id="altura" placeholder="Ejemplo 169 sin .">
+          </div>
+
+          <div class="campo">
+            <label for="age">Edad:</label>
+            <input class="input" type="number" id="edad" placeholder="Ejemplo 20">
+          </div>
+
+          <div class="campo">
+            <label for="gender">Sexo:</label>
+            <select class="input" id="genero">
+              <option value="hombre">Hombre</option>
+              <option value="mujer">Mujer</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="activity">Nivel de Actividad:</label>
+            <select class="input" id="activity">
+              <option value="1.2">Sedentario</option>
+              <option value="1.375">Ligeramente Activo</option>
+              <option value="1.55">Moderadamente Activo</option>
+              <option value="1.725">Muy Activo</option>
+              <option value="1.9">Extremadamente Activo</option>
+            </select>
+          </div>
+
+          <div class="text-center">
+            <button class="button-blue" id="btn-calorias">Calcular Calorías</button>
+          </div>
+          <div class="text-center">
+            <p class="resultado">Tu requerimiento diario de calorías es: <span id="calorias">0</span> kcal.</p>
+          </div>
+        </form>
       </div>
+      </div>
+
+       <!--Calculadora-->
+      <div>
+         <!--Calculadora-->
+      <form class="formulario">
+        <fieldset>
+          <legend>Tus datos</legend>
+        </fieldset>
+
+        <div class="campo">
+          <label for="gender">Sexo:</label>
+          <select class="input" id="generos" name="gender">
+            <option value="femenino">Mujer</option>
+            <option value="masculino">Hombre</option>
+          </select><br><br>
+        </div>
+        <!--Fin de campo-->
+        <div class="campo">
+          <label for="peso">Peso (kg):</label>
+          <input class="input" type="number" id="pesos" name="peso" step="0.1" placeholder="Ejemplo  61.1"><br><br>
+        </div>
+        <!--Fin de campo-->
+        <div class="campo">
+          <label for="altura">Altura (m):</label>
+          <input class="input" type="number" id="alturas" name="altura" step="0.1"
+            placeholder="Ejemplo  1.63 con ."><br><br>
+        </div>
+        <!--Fin de campo-->
+        <div class="campo">
+          <label for="edad">Edad:</label>
+          <input class="input" type="number" id="edades" name="edad" placeholder="Ejemplo 47 "><br><br>
+        </div>
+        <!--Fin de campo-->
+        <div class="text-center">
+          <button class="button-blue" id="btn-grasa">Calcular % graso</button>
+        </div>
+        <div class="text-center">
+          <p id="resultados" class="resultado">Tu porcentaje de grasa corporal es:</p>
+        </div>
+      </form>
+    </div>
+    <!--Fin de calculadora-->
+  </div>
+    
+    
+    </section>
+     
+    <!--Fin de calculadora-->
+    <div>
+      <h2 class="text-center">Calculadoras</h2>
+      <p class="text-center">Los valores de % graso son referencias.<br>Para mayor precisión recomendamos una antropometría hecha por un
+        profesional.</p>
+    </div>
+  </main>
+
+  <script src="../js/index.js"></script>
+  <script src="../js/calculator.js"></script>
+  <!--Pie de pagina-->
+  <footer class="container_footer">
+    <div class="footer_logo">
+      <img src="../assets/Logo2.png" alt="logo" />
+    </div>
+    <div class="footer_contact">
+      <h6>Estamos en </h6>
+      <p>- San Martín 2281 Puntomed - Piso 6 - Consultorio 9 </p>
+      <h6>Escribirnos al</h6>
+      <p class="num-footer">-3765113766</p>
+      <h6>Nuestro correo</h6>
+      <p>- nutri.ciencia@hotmail.com</p>
+
+    </div>
   </footer>
 </body>
+
 </html>
