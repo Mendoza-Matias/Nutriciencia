@@ -155,7 +155,10 @@ li{
 .titulo-header{
     font-size: 4.5rem;
 }
-
+.parrafo-header{
+    padding: 2rem;
+    font-size: 2rem;
+}
 @media (min-width:768px) {
     h1 {
         font-size: 8rem;
@@ -433,8 +436,15 @@ li{
 }
 
 /*CONTACTO*/
-
+.contacto-titulo{
+    color: var(--secondary);
+}
 .contacto-logos{
     display: flex;
     justify-content: center;
+}
+
+.map-contacto{
+    width: 100%;
+    height: 50rem;
 }
