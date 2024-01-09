@@ -339,13 +339,14 @@ li{
 }
 @media (min-width:768px) {
     .turnos{
-        height: 50rem;
+        height: 60rem;
     }
 }
 .turnos-titulo,.turnos-texto{
     color: var(--secondary);
 }
 .turnos-texto{
+    font-size: 2rem;
     padding: 2rem;
 }
 .turnos-titulo{
