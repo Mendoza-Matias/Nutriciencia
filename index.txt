@@ -1,0 +1,34 @@
+<div class="container">
+                <div class="nosotros_imagenprimera"></div>
+                    <div class="nosotros_parrafo_primera">
+                        <div class="nosotros_parrafo">
+                            <h2 class="nosotros_title">Capacitados en:</h2>
+                            <p>-Nutrición Clínica  </p>
+                            <p>-Nutrición Deportiva  </p>
+                            <p>-Antropometría protocolos ISAK I y II</p>
+                            <p>-Soporte nutricional enteral </p>
+                            <p>-Coaching nutricional</p>
+                            <p>-Alimentación basada en plantas</p>
+                            <p>-Trastornos de la conducta alimentaria</p>
+                            <p>-Nutrición en embarazo y lactancia</p>
+                            <p>-Nutrición infantil</p>
+                        </div>
+                    </div>
+                    <!--Fin-->
+                    <div class="nosotros_imagensegunda"></div>
+                    <div class="nosotros_parrafo">
+                        <div class="nosotros_parrafo">
+                            <h2 class="nosotros_title">Capacitados en:</h2>
+                            <p>-Nutrición Clínica  </p>
+                            <p>-Nutrición Deportiva  </p>
+                            <p>-Antropometría protocolos ISAK I y II</p>
+                            <p>-Soporte nutricional enteral </p>
+                            <p>-Coaching nutricional</p>
+                            <p>-Alimentación basada en plantas</p>
+                            <p>-Trastornos de la conducta alimentaria</p>
+                            <p>-Nutrición en embarazo y lactancia</p>
+                            <p>-Nutrición infantil</p>
+                        </div>
+                    </div>
+                    <!--Fin-->
+                </div>
