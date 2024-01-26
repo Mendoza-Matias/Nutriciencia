@@ -292,20 +292,27 @@ img{
 }
 
 .nosotros_title{
+    margin-top: 2.5rem;
     font-size: 2.5rem;
+    padding: 1rem;
 }
 @media (min-width:768px) {
-    .nosotros_title h3{
-        margin-bottom: 2rem;
-        font-size: 1.3em;
+    .nosotros_title{
+        padding: 0;
+        margin-top: 0;
+        font-size: 2em;
     }
 }
 
 .nosotros_parrafo p{
+    margin-left: 1rem;
     font-size: 2rem;
-    line-height: 2;
 }
-
+@media (min-width:768px) {
+    .nosotros_parrafo p{
+        margin-left: 0rem;
+    }
+}
 /* FOOTER */
 
 .container_footer{
@@ -355,7 +362,7 @@ img{
 }
 .titulo-contacto{
     padding: 5rem;
-    width: 35rem;
+    width: 41rem;
     color: var(--secondary);
 }
 @media (min-width:768px) {
