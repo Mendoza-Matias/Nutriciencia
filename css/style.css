@@ -265,6 +265,7 @@ img{
     }
 }
 .nosotros_parrafo,.nosotros_parrafo_primera{
+    line-height: 1;
     margin: 0;
 }
 @media (min-width:768px) {
@@ -292,6 +293,8 @@ img{
 }
 
 .nosotros_title{
+    margin-left: 1rem;
+    margin-top: 2rem;
     font-size: 2.5rem;
 }
 @media (min-width:768px) {
@@ -303,7 +306,7 @@ img{
 
 .nosotros_parrafo p{
     font-size: 2rem;
-    line-height: 2;
+    padding: 0.5rem;
 }
 
 /* FOOTER */
@@ -355,7 +358,7 @@ img{
 }
 .titulo-contacto{
     padding: 5rem;
-    width: 35rem;
+    width: 41rem;
     color: var(--secondary);
 }
 @media (min-width:768px) {
