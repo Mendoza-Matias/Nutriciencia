@@ -265,6 +265,7 @@ img{
     }
 }
 .nosotros_parrafo,.nosotros_parrafo_primera{
+    line-height: 1;
     margin: 0;
 }
 @media (min-width:768px) {
