@@ -323,6 +323,7 @@ img{
     margin-left: 1rem;
     font-size: 2rem;
 }
+
 @media (min-width:768px) {
     .nosotros_parrafo p{
         font-size: 2.8rem;
@@ -406,8 +407,10 @@ img{
 /* CONTACTO */
 
 .map_contacto{
-    width: 100%;
-    
+    width: 100%;   
+}
+.p-contact{
+   margin-left: 2rem;
 }
 /*TURNOS SECCION*/
 .turnos{
