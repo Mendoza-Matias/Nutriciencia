@@ -429,19 +429,27 @@ img{
     flex-direction: column;
     align-items: center;
 }
+.turnos-titulo-container{
+   padding-top: 10rem;
+}
 .turnos-texto{
-  
+    text-align: justify;
+    margin: 0%;
     font-size: 2rem;
+    margin-bottom: 2rem;
     padding: 2rem;
+}
+@media (min-width:768px) {
+    .turnos-texto{
+        padding: 0;
+    }
 }
 @media (min-width:768px) {
     .turnos-texto{
         width: 50rem;
     }
 }
-.turnos-titulo{
-    padding: 5rem;
-}
+
 /*SERVICIOS SECCION*/
 
 @media (min-width:768px) {
@@ -499,7 +507,7 @@ img{
     margin-bottom: 1rem;
 }
 .campo{
-    line-height: 1;
+    line-height: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -522,12 +530,6 @@ img{
 
 }
 
-.campo-final{
-    line-height: 0.5;
-}
-.campo-final label{
-    margin-bottom: 5px;
-}
 .resultado{
     padding: 3.5rem;
 }
