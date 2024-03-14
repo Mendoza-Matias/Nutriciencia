@@ -271,7 +271,7 @@ img{
     }
 }
 .nosotros_parrafo,.nosotros_parrafo_primera{
-    line-height: 2;
+    line-height: 1;
 }
 @media (min-width:768px) {
     .nosotros_parrafo,.nosotros_parrafo_primera{
@@ -292,14 +292,16 @@ img{
 }
 
 .nosotros_imagenprimera { 
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../assets/nosotros_img_one.jpg) ;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../assets/nosotros-img-uno.JPG) ;
 }
 
 .nosotros_imagensegunda { 
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../assets/nosotros_img_two.jpg) ;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../assets/nosotros-img-dos.JPG) ;
 }
 .nosotros_imagenprimera,.nosotros_imagensegunda { 
-    height: 65rem;
+    height: 46rem;
+    border-radius: 1.5px;
+    box-shadow: 1px 1px 5px var(--dark);
 }
 @media (min-width:768px) {
     .nosotros_imagenprimera,.nosotros_imagensegunda { 
@@ -307,7 +309,7 @@ img{
     }
 }
 .nosotros_title{
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     font-size: 2.5rem;
     padding: 0.5rem;
 }
@@ -388,6 +390,7 @@ img{
     background-size: cover;
     background-position: center;
     height: 50rem;
+    margin-top: 3rem;
 }
 .titulo-contacto{
     padding: 5rem;
