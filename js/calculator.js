@@ -29,7 +29,7 @@ btnGrasa.addEventListener("click", (e) => {
 function calcularIMC() {
   const weight = document.getElementById("weight").value;
   console.log(weight)
-  const height = document.getElementById("height").value / 100;
+  const height = document.getElementById("height").value;
   if (weight && height) {
     const imc = weight / (height ** 2);
 
