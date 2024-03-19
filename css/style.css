@@ -53,7 +53,7 @@ h2 {
     }
 }
 h3 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 
@@ -90,12 +90,17 @@ img{
     padding: 2rem;
     border: none;
     margin-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 2px;
 }
 .button{
     background-color: var(--primaryDark);  
 }
 .button-blue{
     background-color: var(--primary);  
+}
+.button-blue:hover{
+    background-color: #00afb5d5;
 }
 
 
@@ -292,11 +297,11 @@ img{
 }
 
 .nosotros_imagenprimera { 
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../assets/nosotros-img-uno.JPG) ;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(https://res.cloudinary.com/dcerrhe4s/image/upload/v1710846690/nutriciencia/ib23mkptahd45avv4pkh.jpg) ;
 }
 
 .nosotros_imagensegunda { 
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../assets/nosotros-img-dos.JPG) ;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(https://res.cloudinary.com/dcerrhe4s/image/upload/v1710846688/nutriciencia/ehffwbamblrmxcpi9osl.jpg) ;
 }
 .nosotros_imagenprimera,.nosotros_imagensegunda { 
     height: 46rem;
@@ -386,7 +391,7 @@ img{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(to left , rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../assets/contact.jpg);
+    background-image: linear-gradient(to left , rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://res.cloudinary.com/dcerrhe4s/image/upload/v1710846683/nutriciencia/zwejo3xbhogr6tg3zqyb.jpg);
     background-size: cover;
     background-position: center;
     height: 50rem;
@@ -458,11 +463,12 @@ img{
 @media (min-width:768px) {
     .servicios{
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(2,1fr);
         gap: 1rem;
         justify-content: center;
     }
 }
+
 .servicio_img{
     width: 20rem;
     height: 20rem;
@@ -480,7 +486,9 @@ img{
     border-radius: 1rem;
     margin-top: 1rem;
 }
-
+.lista-servicios{
+    padding: 0;
+}
 .color-servicio{
     color: var(--terciary);
 }
