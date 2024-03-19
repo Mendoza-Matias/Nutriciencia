@@ -30,44 +30,14 @@ function calcularIMC() {
   const weight = document.getElementById("weight").value;
   console.log(weight)
   const height = document.getElementById("height").value / 100;
-  const age = document.getElementById("age").value;
-  const sex = document.getElementById("sex").value;
-
-  if (weight && height && age) {
+  if (weight && height) {
     const imc = weight / (height ** 2);
 
-    let category;
-    if (sex === "hombre") {
-      if (imc < 20) {
-        category = "Bajo peso";
-      } else if (imc < 25) {
-        category = "Peso normal";
-      } else if (imc < 30) {
-        category = "Sobrepeso";
-      } else if (imc < 40) {
-        category = "Obesidad";
-      } else {
-        category = "Obesidad extrema";
-      }
-    } else if (sex === "mujer") {
-      if (imc < 19) {
-        category = "Bajo peso";
-      } else if (imc < 24) {
-        category = "Peso normal";
-      } else if (imc < 29) {
-        category = "Sobrepeso";
-      } else if (imc < 39) {
-        category = "Obesidad";
-      } else {
-        category = "Obesidad extrema";
-      }
-    }
     const resultElement = document.getElementById("resultado")
     resultElement.innerHTML = `Tu IMC es ${imc.toFixed(2)}`
 
     document.getElementById("weight").value = "";
     document.getElementById("height").value = "";
-    document.getElementById("age").value = "";
   }
 }
 
